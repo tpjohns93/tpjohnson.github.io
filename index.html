@@ -1,7 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taylor P. Johnson</title>
+    <style>
+        /* Classic layout */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Georgia", serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin: 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #333; 
+            display: inline-block;
+        }
+
+        p {
+            font-style: italic;
+            margin-top: 15px;
+            margin-bottom: 25px; /* Added space before the link */
+            color: #333;
+            letter-spacing: 1px;
+        }
+
+        /* Classic Resume Link Styling */
+        .resume-link {
+            display: inline-block;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border: 1px solid #333;
+            padding: 10px 25px;
+            transition: all 0.3s ease;
+        }
+
+        .resume-link:hover {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
 <body>
-    <h1>Welcome to my website!</h1>
-    <p>This is live on GitHub Pages.</p>
+
+    <div class="container">
+        <h1>Taylor P. Johnson</h1>
+        <p>tpjohns93@gmail.com</p>
+        
+        <a href="resume.pdf" class="resume-link" target="_blank">View Resume</a>
+    </div>
+
 </body>
 </html>
