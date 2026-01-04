@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taylor P. Johnson</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <style>
-        /* Classic layout */
         body {
             margin: 0;
             height: 100vh;
@@ -32,15 +33,28 @@
             display: inline-block;
         }
 
-        p {
+        .contact-info {
             font-style: italic;
             margin-top: 15px;
-            margin-bottom: 25px; /* Added space before the link */
+            margin-bottom: 20px;
             color: #333;
             letter-spacing: 1px;
         }
 
-        /* Classic Resume Link Styling */
+        /* Styling for the LinkedIn Logo */
+        .linkedin-icon {
+            font-size: 2rem;
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: block;
+            margin-bottom: 25px;
+        }
+
+        .linkedin-icon:hover {
+            color: #0077b5; /* Official LinkedIn Blue */
+        }
+
         .resume-link {
             display: inline-block;
             text-decoration: none;
@@ -63,8 +77,12 @@
 
     <div class="container">
         <h1>Taylor P. Johnson</h1>
-        <p>tpjohns93@gmail.com</p>
+        <p class="contact-info">tpjohns93@gmail.com</p>
         
+        <a href="https://www.linkedin.com/in/taylor-johnson93/" class="linkedin-icon" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+
         <a href="resume.pdf" class="resume-link" target="_blank">View Resume</a>
     </div>
 
