@@ -41,18 +41,38 @@
             letter-spacing: 1px;
         }
 
-        /* Styling for the LinkedIn Logo */
-        .linkedin-icon {
+        /* Container for all social icons */
+        .social-icons {
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px; /* Spacing between the three icons */
+        }
+
+        /* General styling for Font Awesome icons (GitHub & LinkedIn) */
+        .social-icon {
             font-size: 2rem;
             color: #333;
             text-decoration: none;
-            transition: color 0.3s ease;
-            display: block;
-            margin-bottom: 25px;
+            transition: all 0.3s ease;
         }
 
-        .linkedin-icon:hover {
-            color: #0077b5; /* Official LinkedIn Blue */
+        .social-icon:hover {
+            color: #666; /* Subtle grey hover for a classic feel */
+        }
+
+        /* ORCID Specific Styling to match size */
+        .orcid-icon img {
+            width: 30px; 
+            height: 30px;
+            vertical-align: middle;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+
+        .orcid-icon:hover img {
+            filter: grayscale(0%);
         }
 
         .resume-link {
@@ -77,12 +97,24 @@
 
     <div class="container">
         <h1>Taylor P. Johnson</h1>
-<p class="contact-info">
-    <a href="mailto:tpjohns93@gmail.com" style="text-decoration:none; color:inherit;">tpjohns93@gmail.com</a>
-</p>
-        <a href="https://www.linkedin.com/in/taylor-johnson93/" class="linkedin-icon" target="_blank">
-            <i class="fab fa-linkedin"></i>
-        </a>
+        
+        <p class="contact-info">
+            <a href="mailto:tpjohns93@gmail.com" style="text-decoration:none; color:inherit;">tpjohns93@gmail.com</a>
+        </p>
+        
+        <div class="social-icons">
+            <a href="https://github.com/tpjohns93" class="social-icon" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/taylor-johnson93/" class="social-icon" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="https://orcid.org/0000-0001-5959-5182" class="orcid-icon" target="_blank">
+                <img src="https://orcid.org/assets/vectors/orcid.logo.icon.svg" alt="ORCID logo">
+            </a>
+        </div>
 
         <a href="resume.pdf" class="resume-link" target="_blank">View Resume</a>
     </div>
