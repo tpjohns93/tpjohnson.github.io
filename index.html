@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taylor P. Johnson</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+
     <style>
         body {
             margin: 0;
@@ -35,7 +36,7 @@
             text-transform: uppercase;
             margin: 0;
             padding-bottom: 10px;
-            border-bottom: 2px solid #333; 
+            border-bottom: 2px solid #333;
             display: inline-block;
         }
 
@@ -60,7 +61,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 25px; 
+            gap: 25px;
         }
 
         .social-link {
@@ -71,18 +72,33 @@
             transition: all 0.3s ease;
         }
 
-        .social-link i { font-size: 2rem; }
-        .social-link img, .social-link svg {
-            width: 32px; 
+        .social-link i {
+            font-size: 2rem;
+        }
+
+        .social-link img,
+        .social-link svg {
+            width: 32px;
             height: 32px;
             filter: grayscale(100%);
             transition: all 0.3s ease;
         }
 
-        .social-link:hover i { color: #666; }
-        .social-link.linkedin:hover i { color: #0077b5; }
-        .social-link.orcid:hover img { filter: grayscale(0%); }
-        .social-link.protocols:hover svg path { fill: #24b6f7; }
+        .social-link:hover i {
+            color: #666;
+        }
+
+        .social-link.linkedin:hover i {
+            color: #0077b5;
+        }
+
+        .social-link.orcid:hover img {
+            filter: grayscale(0%);
+        }
+
+        .social-link.protocols:hover svg path {
+            fill: #24b6f7;
+        }
 
         .resume-link {
             display: inline-block;
@@ -98,64 +114,70 @@
         }
 
         .resume-link:hover {
-            background-color: #0BF4C5;
-            border-color: #0BF4C5;
-            color: #333;
+            background-color: #0A192F;
+            border-color: #354170;
+            color: #fff;
         }
 
         /* The Cropped Border Logic */
         .bottom-border-wrap {
             width: 100%;
-            height: 100px;      /* Adjust this height to show more/less of the image */
-            overflow: hidden;   /* This hides the bottom half */
-            margin-top: 10px;   /* Space below the socials */
+            height: 100px;
+            /* Adjust this height to show more/less of the image */
+            overflow: hidden;
+            /* This hides the bottom half */
+            margin-top: 10px;
+            /* Space below the socials */
             display: flex;
             justify-content: center;
         }
 
         .bottom-border-wrap img {
-            width: 100%;        /* Stretches across the container */
+            width: 100%;
+            /* Stretches across the container */
             height: auto;
             display: block;
-            object-position: top; /* Ensures we see the top of the image */
+            object-position: top;
+            /* Ensures we see the top of the image */
         }
     </style>
 </head>
+
 <body>
 
     <div class="container">
         <h1>Taylor P. Johnson</h1>
-        
+
         <p class="contact-info">
             <a href="mailto:tpjohns93@gmail.com" style="text-decoration:none; color:inherit;">
                 tpjohns93@gmail.com
             </a>
         </p>
-            
-        <p> 
+
+        <p>
             <a href="resume.pdf" class="resume-link" target="_blank">View Resume</a>
         </p>
 
         <p class="blurb">
-            Scientist specializing in workflow design, protocol development, team management and bench optimization from pilot to global scale, with scientific and institutional knowledge spanning clinical neurogenetics and food science. 
+            Scientist specializing in workflow design, protocol development, team management and bench optimization from pilot to global scale, with scientific and institutional knowledge spanning clinical neurogenetics and food science.
         </p>
-        
+
         <p class="blurb">
             Please reach out for collaborations!
         </p>
 
 
         <div class="social-icons">
-                <a href="https://www.linkedin.com/in/taylor-johnson93/" class="social-link linkedin" target="_blank" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/taylor-johnson93/" class="social-link linkedin" target="_blank" title="LinkedIn">
                 <i class="fab fa-linkedin"></i>
             </a>
-            
+
             <a href="https://www.protocols.io/researchers/tpjohns93" class="social-link protocols" target="_blank" title="Protocols.io">
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#333" d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm4.5 13.5h-3v3h-3v-9h4.5c1.657 0 3 1.343 3 3s-1.343 3-3 3z"/>
+                    <path fill="#333" d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm4.5 13.5h-3v3h-3v-9h4.5c1.657 0 3 1.343 3 3s-1.343 3-3 3z" />
                 </svg>
             </a>
-            
+
             <a href="https://github.com/tpjohns93" class="social-link" target="_blank" title="GitHub">
                 <i class="fab fa-github"></i>
             </a>
@@ -168,10 +190,38 @@
 
         </div>
 
+        <div id="phytoplankton-counter-box" style="
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    text-align: center;
+    padding: 25px;
+    background: #0A192F; /* Deep Navy Background */
+    border-radius: 9px;
+    border-bottom: 4px solid #0BF4C5; /* Your Cyan as a highlight */
+    max-width: 350px;
+    margin: 1px auto;">
+
+            <p style="margin: 0; font-size: 12px; color: #C3C8D9; text-transform: uppercase; letter-spacing: 2px; font-weight: 600;">
+                Californa Department of Public Health Phytoplankton Monitoring Program
+            </p>
+
+            <div id="sample-count" style="
+        font-size: 3.5rem; 
+        font-weight: 700; 
+        color: #0BF4C5; /* Your Cyan for the number */
+        margin: 1px 0;">6</div>
+
+            <p style="margin: 0; font-size: 12px; color: #64FFDA; text-transform: uppercase; letter-spacing: 2px; font-weight: 600;">
+                 Samples collected as of 1/17/26
+            </p>
+        </div>
         <div class="bottom-border-wrap">
             <img src="bottom_border.png" alt="Bottom Border Decor">
         </div>
+
     </div>
 
+
 </body>
+
 </html>
+
