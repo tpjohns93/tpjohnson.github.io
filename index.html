@@ -73,28 +73,45 @@
         }
 
         .social-link i {
-            font-size: 2rem;
+            font-size: 3rem;
         }
 
         .social-link img,
         .social-link svg {
-            width: 32px;
-            height: 32px;
-            filter: grayscale(100%);
+            width: 50px;
+            height: 50px;
+            filter: none;
             transition: all 0.3s ease;
         }
 
-        .social-link:hover i {
-            color: #666;
+
+        .social-link.linkedin i {
+        color: #0077b5; /* base */
         }
 
         .social-link.linkedin:hover i {
-            color: #0077b5;
+        color: #005582; /* darker LinkedIn */
+        }
+
+        .social-link[href*="github"] i {
+           color: #444444; /* GitHub dark gray */
+        }
+
+
+
+        .social-link[href*="github"]:hover i {
+        color: #000000; /* pure black */
+        }
+
+
+        .social-link.orcid img {
+        filter: none;
         }
 
         .social-link.orcid:hover img {
-            filter: grayscale(0%);
+          filter: brightness(0.85);
         }
+
 
         .social-link.protocols:hover svg path {
             fill: #24b6f7;
@@ -248,4 +265,3 @@ document.addEventListener("DOMContentLoaded", function() {
 </body>
 
 </html>
-
